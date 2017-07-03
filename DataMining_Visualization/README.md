@@ -1,5 +1,7 @@
 # DataMining & Visualization
 
+
+
 ### DataMining
 
 * [Deep content-based music recommendation](https://papers.nips.cc/paper/5004-deep-content-based-music-recommendation)
@@ -27,6 +29,26 @@
     - Training 크기 500 Billion ...
 
 
+* [Learning Entity and Relation Embeddings for Knowledge Graph Completion](http://nlp.csai.tsinghua.edu.cn/~lzy/publications/aaai2015_transr.pdf)
+
+    - Knowlege graph embedding 모델로 TransR 제안
+    - entity space와 relation space를 같은 공간에 embedding함
+    - relation을 클러스터링하여 관계를 그룹핑한 CTransR 버전
+
+
+* [Knowledge Graph Embedding for Hyper-Relational Data](http://ieeexplore.ieee.org/document/7889640/)
+
+    - Hyper-relation(두 entity간 다중의 relation이 있을 수 있음) 문제를 해결하기 위한 모델 제안
+    - transHR, hyper-relation에 대해 각각의 relation matrix를 통해 embedding함
+
+
+* [TransG: A Generative Model for Knowledge Graph Embedding](https://aclweb.org/anthology/P/P16/P16-1219.pdf)
+
+    - multiple relation 문제 -> relation에 클러스터링 도입
+    - 클러스터링 갯수를 모름 -> Chinese restaurant process로 동적 생성
+
+
+
 ### Visualization
 
 * [Gatherplots: Extended Scatterplots for Categorical Data](http://www.umiacs.umd.edu/~elm/projects/gatherplots/gatherplots.pdf)
@@ -45,3 +67,13 @@
 
     - Convolutional Neural Networks를 효율적으로 시각화함
     - 실시간으로 학습된 필터를 시각화함으로서 학습이 잘 되는지를 알 수 있음
+
+
+* [Context Preserving Dynamic Word Cloud Visualization](http://www.shixialiu.com/publications/wordcloud/paper.pdf)
+    - 워드클라우드의 각 단어들이 문맥적으로 가까울수록 가까이 위치시킬 수 있도록 정렬
+    - Importance criterion, Co-Occurrence criterion, Similarity criterion 등을 기준으로 정렬
+
+* [An Interactive Visual Testbed System for Dimension Reduction and Clustering of Large-scale High-dimensional Data](http://www.zcliu.org/papers/2013_vda_testbed.pdf)
+
+    - Large scale 데이터에 대해서 차원 축소한 뒤 효과적으로 데이터 분석 방법 제시
+    - pre-processing, clustering, dimension reduction, alignment, scatter plot 등 기능 제공

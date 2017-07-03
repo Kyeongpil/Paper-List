@@ -1,7 +1,7 @@
 # Deep Learning Papers
 
 
-### Vision & Video
+### Vision & Video & GAN
 
 * [Generative Adversarial Nets](https://arxiv.org/abs/1406.2661)
 
@@ -9,11 +9,36 @@
     - Minimax game
 
 
+* [UNSUPERVISED REPRESENTATION LEARNING WITH DEEP CONVOLUTIONAL GENERATIVE ADVERSARIAL NETWORKS](https://arxiv.org/abs/1511.06434)
+
+    - 기존 GAN 모델을 더 안정적으로 학습할 수 있는 방법(technique) 제시   
+
+
 * [Conditional Image Generation with PixelCNN Decoders](https://arxiv.org/abs/1606.05328)
 
     - Generative Model
+    - PixelRNN에 비해 더 빠르게 학습 가능
     - Gated convolutional layers, residual connections
     - latent vector h를 추가함으로서 conditional Generative model로 사용 가능
+
+
+* [Pixel Recurrent Neural Networks](https://arxiv.org/abs/1601.06759)
+
+    - Diagonal BiLSTM 기반 Image Generative model
+    - Residual blocks, Residual connections
+
+
+* [Learning to Discover Cross-Domain Relations with Generative Adversarial Networks](https://arxiv.org/abs/1703.05192)
+
+    - 기존 GAN 모델에 Cross-domain relation을 적용할 수 있도록 새로운 GAN 모델 설계 (DiscoGAN)
+    - GAN with reconstruction loss에 비해 mode collapse 문제를 좀 더 해결할 수 있음
+
+
+* [Faster R-CNNL Towards Real-Time Object Detection with Region Proposal Networks](https://arxiv.org/abs/1506.01497)
+
+    - 1x1 convolution filter
+    - box regression layer, box-classification layer
+
 
 
 ### Word/Sentence Embedding
@@ -55,6 +80,7 @@
     - 전체 PMI를 이용하여 word embedding 학습
     - PMI Matrix가 매우 크므로 분산 처리
     - Matrix를 block으로 나눠서 분산 처리 함 
+
 
 
 ### Natural Language Processing, Language Model, QA
@@ -152,6 +178,37 @@
     - 기존 모델 - LSTM, SVM, MemNN 등을 실험을 통해 비교
 
 
+* [Adversarial Neural Machine Translation](https://arxiv.org/abs/1704.06933)
+
+    - NMT 작업에 Adversarial technique 도입
+    - discriminant에서는 input과 output을 concatenate한 tensor를 convolution을 통해 진짜/가짜 판별
+    - generate에서는 가짜 sequence 생성
+    - 학습은 MLE와 policy gradient를 번갈아가며 학습, 기존 MLE 방식보다 BLEU score 개선
+
+
+* [Convolutional Sequence to Sequence Learning](https://arxiv.org/abs/1705.03122)
+
+    - 기존 RNN 기반의 sequence to sequence를 CNN으로 대체하려는 시도
+    - Position embedding, residual connection, attention
+    - GLU (Gated Linear Unit)
+    - Initialization weight를 수학적으로 유도
+
+
+* [Quasi-Recurrent Neural Networks](https://arxiv.org/abs/1611.01576)
+
+    - RNN 방법에 CNN 방법을 접목 시킴
+    - 먼저 전체 time step에 대해 convolution을 하고 time step에 따라 liear multiplication을 없애 속도를 빨리 함
+    - 해당 모델에 따른 Attention과 sequence to sequence 방법도 제시
+    - 기존 LSTM에 비해 속도도 빠르면서 성능도 개선, 더 긴 sequence에 대해서 학습 가능성
+
+
+* [A simple neural network module for relational reasoning](https://deepmind.com/blog/neural-approach-relational-reasoning/)
+
+    - o_i, o_j에 대해 g(o_i, o_j)가 한 pair의 추론된 relation
+    - 이것을 전체 pair에 대해서 sum을 한 뒤 f를 걸쳐 전체를 reasoning하는 모듈로 설계
+    - CLEVER Dataset에 대해 매우 높은 정확도 ( > human)
+
+
 
 ### Speech & Sound
 
@@ -170,9 +227,7 @@
 
 
 
-
-
-### Deep learning theory & Model
+### Machine Learning(Deep learning) theory & Model
 
 * [Training Products of Experts by Minimizing Constrative Divergence](http://www.cs.toronto.edu/~fritz/absps/tr00-004.pdf)
 
@@ -193,3 +248,52 @@
 
     - 모델의 크기를 줄이면서 성능은 거의 유지시킴
     - 1 by 1 filter 도입
+
+
+* [Neural Architecture Search with Reinforcement Learning](https://research.google.com/pubs/pub45826.html)
+
+    - RNN Controller가 뉴럴넷의 hyper parameter를 설정, 해당 뉴럴넷을 학습
+    - Child net의 에러를 리워드로 하여 RL을 통해 학습(Policy gradient)
+    - 분산 처리 학습 (Asynchronous updates)
+
+
+* [Learning Deep Nearest Neighbor Representations Using Differentiable Boundary Trees](https://arxiv.org/abs/1702.08833)
+
+    - Boundary tree를 확률 기반, 미분 가능하게 모델을 설계하고 이를 뉴럴넷으로 학습
+    - 이를 통해 더 좋은 representation을 뽑아낼 수 있도록 하고
+    - tsne에서 시각화 했을 때 그룹간 겹치는 현상을 방지함
+
+
+* [Deep Forest: Towards an Alternative to Deep Neural Netowrks](https://arxiv.org/abs/1702.08835)
+
+    - 기존 forest를 DNN처럼 Cascade(stacking)을 통해 더 좋은 성능을 낼 수 있도록 함
+    - 딥러닝에 비해 Small size dataset에 대해 좋은 효과를 발휘함
+
+
+* [Locally Optimized Product Quantization for Approximate Nearest Neighbor Search](http://image.ntua.gr/iva/files/lopq.pdf)
+
+    - large size dataset에서 주어진 vector와 가장 가까운 데이터를 찾는 것은 매우 시간이 걸림
+    - 따라서 k-means와 같이 quantization 방법을 사용
+    - 하지만 k-means도 계산할 때 memory, time이 매우 많이 듦
+    - 이를 해결하기 위해 정확도 손실도 적으면서 속도도 빠른 LOPQ(Locally Optimized Product Quantization) 방법 제안
+
+
+* [Hybrid computing using a neural network with dynamic external memory](https://deepmind.com/blog/differentiable-neural-computers/)
+
+    - Differentiable neural computer
+    - 외부 메모리에 저장하는 것처럼 거대한 메모리(matrix)에 읽고 쓰기 하는 작업을 differentiable function으로 정의
+    - 읽고 쓰기 등의 작업은 controller에서 작업 통제
+    - 메모리를 통해 더 긴 sequence에 대해서도 우수한 성능을 보임
+
+
+* [Self-Normalizing Neural Networks](https://arxiv.org/abs/1706.02515)
+
+    - 기존 ELU(Exponentional Linear Unit)에서 mean, variance가 (0, 1)로 되도록 alpha 설정
+    - 이에 따라 dropout도 새로 설계
+
+
+* [Forward Thinking: Building and Training Neural Networks One Layer at a Time](https://arxiv.org/abs/1706.02480)
+    
+    - 한 레이어를 충분히 학습하면 그 레이어는 더이상 학습을 하지 않도록 하고 그 위에 추가 레이어를 쌓는 방법
+    - 학습을 할 때는 이전 layer에는 더이상 back propagation을 하지 않으므로 학습 속도가 빨라짐
+    - MNIST에만 실험했다는 한계
