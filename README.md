@@ -27,4 +27,4 @@
 ### [etc.](https://github.com/rudvlf0413/Paper-List/blob/master/etc/README.md)
 
 
-### [PPT files](https://github.com/rudvlf0413/Paper-List/blob/master/PPT/README.md)
+### [PPT files (직접 발표했던 자료 일부)](https://github.com/rudvlf0413/Paper-List/blob/master/PPT/README.md)
