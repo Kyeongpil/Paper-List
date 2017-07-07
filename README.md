@@ -24,7 +24,7 @@
 * [Visualization](https://github.com/rudvlf0413/Paper-List/tree/master/DataMining_Visualization#visualization)
 
 
-### [etc.](https://github.com/rudvlf0413/Paper-List/blob/master/etc/README.md)
-
-
 ### [PPT files (발표했던 자료 일부)](https://github.com/rudvlf0413/Paper-List/blob/master/PPT/README.md)
+
+
+### [etc.](https://github.com/rudvlf0413/Paper-List/blob/master/etc/README.md)
