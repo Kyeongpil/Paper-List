@@ -40,6 +40,12 @@
     - box regression layer, box-classification layer
 
 
+* [Recurrent Models of Visual Attention](https://papers.nips.cc/paper/5542-recurrent-models-of-visual-attention.pdf)
+
+    - 전체 사진을 보지 말고 매 스텝마다 일부 패치를 보고 다음 스텝에서 해당 패치에서 어느 위치의 패치 뽑아서 인식할지를 학습
+    - controller는 RNN, Reinforcement learning으로 학습
+
+
 
 ### Word/Sentence Embedding
 
