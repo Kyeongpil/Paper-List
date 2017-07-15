@@ -46,6 +46,13 @@
     - controller는 RNN, Reinforcement learning으로 학습
 
 
+* [On the Effects of Batch and Weight Normalization in Generative Adversarial Networks](https://arxiv.org/pdf/1704.03971.pdf)
+
+    - Batch normalization에서 나타나는 mode collapse를 방지하기 위해 weight normalization 제안
+    - Translated ReLU, gradient 기반의 mean squared Euclidean distance evaluation 제안
+    - 기존 DCGAN보다 좋은 성능, 다만 새로운 GAN들과의 비교 부족이 아쉬움d
+
+
 
 ### Word/Sentence Embedding
 
@@ -206,7 +213,7 @@
     - 먼저 전체 time step에 대해 convolution을 하고 time step에 따라 liear multiplication을 없애 속도를 빨리 함
     - 해당 모델에 따른 Attention과 sequence to sequence 방법도 제시
     - 기존 LSTM에 비해 속도도 빠르면서 성능도 개선, 더 긴 sequence에 대해서 학습 가능성
-
+    
 
 * [A simple neural network module for relational reasoning](https://deepmind.com/blog/neural-approach-relational-reasoning/)
 
