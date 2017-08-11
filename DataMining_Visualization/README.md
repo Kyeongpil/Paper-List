@@ -48,6 +48,12 @@
     - 클러스터링 갯수를 모름 -> Chinese restaurant process로 동적 생성
 
 
+* [Learning to Extract Conditional Knowledge for Question Answering Using Dialogue](http://dl.acm.org/citation.cfm?id=2983777)
+
+    - 대화를 할 때 conditional knowledge base(CKB)를 추출
+    - clustering을 통해 answer를 할 때 해당 CKB와 관련이 있는 답을 하도록 학습
+
+
 
 ### Visualization
 
