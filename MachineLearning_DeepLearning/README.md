@@ -310,3 +310,8 @@
     - 한 레이어를 충분히 학습하면 그 레이어는 더이상 학습을 하지 않도록 하고 그 위에 추가 레이어를 쌓는 방법
     - 학습을 할 때는 이전 layer에는 더이상 back propagation을 하지 않으므로 학습 속도가 빨라짐
     - MNIST에만 실험했다는 한계
+
+* [Factorized Variational Autoencoders for Modeling Audience Reactions to Movies](https://www.cs.sfu.ca/~mori/research/papers/deng-cvpr17.pdf)
+
+    - Tensor Factorization과 Autoencoder 결합
+    - 각 사람과 시간을 결합한 latent vector 생성, decoder에서 사람 얼굴(landmark) generation

@@ -26,3 +26,5 @@
 * [Quasi-Recurrent Neural Networks](https://drive.google.com/open?id=0B5pbHg6gugiOM1BoR1liN1lwcEE)
 
 * [Recurrent models of visual attention](https://drive.google.com/open?id=0B5pbHg6gugiORWVDYlFjRGtITkE)
+
+* [Factorized Variational Autoencoders for Modeling Audience Reactions to Movies](https://drive.google.com/open?id=0B5pbHg6gugiOalNrbUpyQm81UlU)
