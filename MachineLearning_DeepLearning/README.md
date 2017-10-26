@@ -95,6 +95,13 @@
     - Matrix를 block으로 나눠서 분산 처리 함 
 
 
+* [Supervised Word Mover's Distance](https://papers.nips.cc/paper/6139-supervised-word-movers-distance.pdf)
+
+    - 두 document의 거리를 bag of words 대신 각 단어 사이 거리를 이용해서 계산
+    - 기존 Word Mover's Distance를 업그레이드한 버전, time complexity 개선
+    - 비슷하게 Wasserstein distance가 있음
+    - Neighbor Component Analysis + Leave-one-out classification으로 학습
+
 
 ### Natural Language Processing, Language Model, QA
 
