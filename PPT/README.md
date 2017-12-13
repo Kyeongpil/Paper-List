@@ -30,3 +30,5 @@
 * [Factorized Variational Autoencoders for Modeling Audience Reactions to Movies](https://drive.google.com/open?id=0B5pbHg6gugiOalNrbUpyQm81UlU)
 
 * [Supervised Words Mover's Distance](https://drive.google.com/open?id=0B5pbHg6gugiOMWMwNV9xM05FWnc)
+
+* [A simple but tough-to-beat baseline for sentence embedding](https://drive.google.com/open?id=1nXuXCBvmAAKCiM1KVtgn39IJkqOXOI9E)
