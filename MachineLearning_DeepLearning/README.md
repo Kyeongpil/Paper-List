@@ -103,6 +103,13 @@
     - Neighbor Component Analysis + Leave-one-out classification으로 학습
 
 
+* [A simple but though-to-beat baseline for sentence embeddings](https://arxiv.org/abs/1707.03264)
+
+    - 이미 학습되어 있는 word embedding vector들을 조합해서 sentence embedding 생성
+    - Random walk를 이용하여 tf-idf와 같은 단어의 weight와 embedding vector의 조합으로 sentence embedding 생성
+    - 전체 문장의 embedding vector에 대해서 첫번째 eigenvector(통사적으로 주로 쓰이는 문장 벡터)를 제거
+    - Unsupervised로 문장 임베딩 벡터를 계산하는데에 의의, 높은 성능
+
 ### Natural Language Processing, Language Model, QA
 
 * [Sequence to Sequence Learning with Neural Netowrks](https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf)

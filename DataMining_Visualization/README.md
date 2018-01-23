@@ -54,6 +54,10 @@
     - clustering을 통해 answer를 할 때 해당 CKB와 관련이 있는 답을 하도록 학습
 
 
+* [Augmented Variational Autoencoders for Collaborative Filtering with Auxiliary Information](https://dl.acm.org/citation.cfm?id=3132972)
+
+    - 추천시스템에 Variational autoencoder와 Adversarial regularization을 융합한 모델 제안
+    - 이외에 기존의 여러 종류의 VAE 모델도 적용
 
 ### Visualization
 
