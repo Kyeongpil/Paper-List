@@ -33,4 +33,4 @@
 
 * [A simple but tough-to-beat baseline for sentence embedding](https://drive.google.com/open?id=1nXuXCBvmAAKCiM1KVtgn39IJkqOXOI9E)
 
-* [Latent Relational Metric Learning via Memory-based Attention for Collaborative Ranking](https://drive.google.com/open?id=1y2qxmguydB9_flhGAhAaoJII5PkIxj67)
+* [Latent Relational Metric Learning via Memory-based Attention for Collaborative Ranking](https://drive.google.com/file/d/1-X4iZOMVgjYVBmDhEDVj7gdBmUj1yf-z/view?usp=sharing)
