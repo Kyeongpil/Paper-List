@@ -59,6 +59,13 @@
     - 추천시스템에 Variational autoencoder와 Adversarial regularization을 융합한 모델 제안
     - 이외에 기존의 여러 종류의 VAE 모델도 적용
 
+
+* [Latent Relational Metric Learning via Memory-based Attention for Collaborative Ranking](https://www.researchgate.net/publication/322385353_Latent_Relational_Metric_Learning_via_Memory-based_Attention_for_Collaborative_Ranking)
+
+    - 추천시스템에 Knowledge graph embedding 기법과 딥러닝의 attention(memory) mechanism 도입
+    - 각 user와 item 간의 relation vector 도입
+
+
 ### Visualization
 
 * [Gatherplots: Extended Scatterplots for Categorical Data](http://www.umiacs.umd.edu/~elm/projects/gatherplots/gatherplots.pdf)

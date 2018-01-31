@@ -32,3 +32,5 @@
 * [Supervised Words Mover's Distance](https://drive.google.com/open?id=0B5pbHg6gugiOMWMwNV9xM05FWnc)
 
 * [A simple but tough-to-beat baseline for sentence embedding](https://drive.google.com/open?id=1nXuXCBvmAAKCiM1KVtgn39IJkqOXOI9E)
+
+* [Latent Relational Metric Learning via Memory-based Attention for Collaborative Ranking](https://drive.google.com/open?id=1y2qxmguydB9_flhGAhAaoJII5PkIxj67)
