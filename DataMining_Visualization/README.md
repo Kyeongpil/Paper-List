@@ -66,6 +66,18 @@
     - 각 user와 item 간의 relation vector 도입
 
 
+* [The spread true and false news online](http://science.sciencemag.org/content/359/6380/1146)
+
+    - Fake news detection 관련
+    - 여러 fake news detection site에서 fake, true 뉴스 링크를 통해 트위터에서 해당 링크를 공유하는 트윗을 수집
+    - 해당 트윗들을 리트윗(spread, cascade)하는 범위(depth, breadth) 및 속도, 갯수를 조사
+    - fake news가 true news보다 더 깊고 넓게 확산됨
+    - 그 이유를 몇가지 연구를 통해 분석
+    - 막상 fake news를 퍼뜨리는 user는 follower 수가 그리 많지는 않음
+    - fake news들은 대체적으로 novelty attract가 높음
+    - 감정분석을 한 결과 fake news와 true news가 갖는 감정이 대체적으로 다름
+
+
 ### Visualization
 
 * [Gatherplots: Extended Scatterplots for Categorical Data](http://www.umiacs.umd.edu/~elm/projects/gatherplots/gatherplots.pdf)
