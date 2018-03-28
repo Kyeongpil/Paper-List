@@ -329,3 +329,10 @@
 
     - Tensor Factorization과 Autoencoder 결합
     - 각 사람과 시간을 결합한 latent vector 생성, decoder에서 사람 얼굴(landmark) generation
+
+* [Efficient Neural Architecture Search via Parameter Sharing](https://arxiv.org/abs/1802.03268)
+
+    - 기존 neural architecture search에 비해 성능을 높이고 학습 속도를 대폭 높임
+    - single directed acyclic graph 이용
+    - parameter sharing을 통해 child network의 학습 속도를 대폭 높임
+    - 여러가지 technique 추가
