@@ -110,6 +110,13 @@
     - 전체 문장의 embedding vector에 대해서 첫번째 eigenvector(통사적으로 주로 쓰이는 문장 벡터)를 제거
     - Unsupervised로 문장 임베딩 벡터를 계산하는데에 의의, 높은 성능
 
+* [Topical word embeddings](http://nlp.csai.tsinghua.edu.cn/~lzy/publications/aaai2015_twe.pdf)
+
+    - Topic modeling을 통해 각 단어의 토픽 결정
+    - skip-gram model에 word embedding과 해당 단어에 해당하는 topic의 embedding vector 결합
+    - polysemy 문제 해결
+
+
 ### Natural Language Processing, Language Model, QA
 
 * [Sequence to Sequence Learning with Neural Netowrks](https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf)
