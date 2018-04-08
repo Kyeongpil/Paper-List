@@ -116,6 +116,12 @@
     - skip-gram model에 word embedding과 해당 단어에 해당하는 topic의 embedding vector 결합
     - polysemy 문제 해결
 
+* [Unsupervised Word and Dependency Path Embeddings for Aspect Term Extraction](https://arxiv.org/abs/1605.07843)
+
+    - Word embedding과 dependency path를 graph embedding처럼 결합
+    - 각 word embedding w1, w2와 dependency path r에 대해 w1-w2과 r과의 거리를 가깝도록 함
+    - 학습된 embedding feature를 가지고 CRF를 학습하고 Aspect term extraction 수행
+
 
 ### Natural Language Processing, Language Model, QA
 
