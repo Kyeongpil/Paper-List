@@ -78,6 +78,13 @@
     - 감정분석을 한 결과 fake news와 true news가 갖는 감정이 대체적으로 다름
 
 
+* [What is Twitter, a Social Network or a News Media?](https://dl.acm.org/citation.cfm?id=1772751)
+
+    - 트위터에서의 social network 분석
+    - follow, retweet 관계 등에 따른 user 영향도 등 분석
+    - 토픽의 트렌드가 어떻게 퍼지고 지속되는지도 분석함
+
+
 ### Visualization
 
 * [Gatherplots: Extended Scatterplots for Categorical Data](http://www.umiacs.umd.edu/~elm/projects/gatherplots/gatherplots.pdf)
