@@ -85,6 +85,7 @@
     - 토픽의 트렌드가 어떻게 퍼지고 지속되는지도 분석함
 
 
+
 ### Visualization
 
 * [Gatherplots: Extended Scatterplots for Categorical Data](http://www.umiacs.umd.edu/~elm/projects/gatherplots/gatherplots.pdf)

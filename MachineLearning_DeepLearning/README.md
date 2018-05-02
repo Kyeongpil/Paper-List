@@ -259,6 +259,13 @@ earning으로 학습함
     - 이 모델을 기반으로 Semi-supervised로 했을 때 성능이 더 오름
 
 
+* [Detect Rumor and Stance Jointly by Neural Multi-task Learning](https://dl.acm.org/citation.cfm?id=3188729)
+    
+    - Rumor detection과 stance detection을 동시에 하면서 학습함
+    - GRU Layer 하나를 두 태스크가 공유함
+    - 특이한건 각 문장에 대한 벡터 인풋으로 tf-idf vector를 인풋으로 함
+
+
 
 ### Speech & Sound
 
