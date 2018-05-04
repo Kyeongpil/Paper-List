@@ -266,6 +266,14 @@ earning으로 학습함
     - 특이한건 각 문장에 대한 벡터 인풋으로 tf-idf vector를 인풋으로 함
 
 
+* [Machine Comprehension by Text-to-Text Neural Question Generation](https://arxiv.org/abs/1705.02012)
+
+    - Question generation task를 위한 neural network 모델 제안
+    - Pointer network + attention 기반의 sequence to sequence 모델
+    - maximum likelihood training + 리워드를 통한 policy gradient 학습
+    - 기존 학습된 모델들을 통해 얼마나 질문 같은지에 대한 reward와 얼마나 문장같은지에 대한 reward를 추정함
+
+
 
 ### Speech & Sound
 
