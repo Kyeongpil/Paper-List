@@ -36,3 +36,5 @@
 * [Latent Relational Metric Learning via Memory-based Attention for Collaborative Ranking](https://drive.google.com/file/d/1-X4iZOMVgjYVBmDhEDVj7gdBmUj1yf-z/view?usp=sharing)
 
 * [Efficient Nerual Architecture Search via Parameter Sharing](https://drive.google.com/file/d/1XniZEpyORpkOCcA1uikhNYODAQTqmpEn/view?usp=sharing)
+
+* [Towards end-to-end speech recognition with recurrent neural networks](https://drive.google.com/file/d/1GWM1OyCexDLHMDAsXH3WjLG14yZh1_YC/view?usp=sharing)
