@@ -66,6 +66,9 @@
     - 각 user와 item 간의 relation vector 도입
 
 
+
+### Social mining
+
 * [The spread true and false news online](http://science.sciencemag.org/content/359/6380/1146)
 
     - Fake news detection 관련
