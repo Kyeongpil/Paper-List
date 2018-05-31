@@ -50,7 +50,7 @@
 
     - Batch normalization에서 나타나는 mode collapse를 방지하기 위해 weight normalization 제안
     - Translated ReLU, gradient 기반의 mean squared Euclidean distance evaluation 제안
-    - 기존 DCGAN보다 좋은 성능, 다만 새로운 GAN들과의 비교 부족이 아쉬움d
+    - 기존 DCGAN보다 좋은 성능, 다만 새로운 GAN들과의 비교 부족이 아쉬움
 
 
 
@@ -254,7 +254,7 @@
     - 기존 attention 기반 encoder-decoder에서, encoder는 sharing하고 decoder는 두 언어로 둬서 paired data가 아닌 monolingual data들을 가지고 학습
     - denoising: encoder에 input sentence를 이웃끼리 순서를 섞어서 noise를 주고 decoder에서 원래 순서를 추론하도록 학습
     - on-the-fly backtranslation: L1(L1_i)을 인풋으로 하여 나온 두 아웃풋(L1_d, L2_d)에 대해
-      L2_d를 psudo pair sentence로 하여 다시 encoder에 놓고 번역후(L1`) L1_i와 L1`을 supervised l
+      L2_d를 psudo pair sentence로 하여 다시 encoder에 놓고 번역후(L1) L1_i와 L1을 supervised l
 earning으로 학습함
     - 이 모델을 기반으로 Semi-supervised로 했을 때 성능이 더 오름
 
