@@ -60,6 +60,13 @@
     -   CNN 을 통해 Vertical filter 와 Horizontal filter 들을 사용
     -   user embedding 도 추가로 사용
 
+* [Outer Product-based Neural Collaborative Filtering](https://www.comp.nus.edu.sg/~xiangnan/papers/ijcai18-ConvNCF.pdf)
+
+    - user embedding vector와 item embedding vector를 outer product하여 interaction map 생성
+    - interaction map에 대해서 CNN layer를 통과하여 해당 유저가 해당 아이템을 볼 확률 생성
+    - Bayesian Personalized Ranking loss 사용
+
+
 ### Social mining
 
 -   [The spread true and false news online](http://science.sciencemag.org/content/359/6380/1146)
@@ -78,6 +85,22 @@
     -   트위터에서의 social network 분석
     -   follow, retweet 관계 등에 따른 user 영향도 등 분석
     -   토픽의 트렌드가 어떻게 퍼지고 지속되는지도 분석함
+
+* [Automatic Opinion Leader Recognition in Group Discussions](https://ieeexplore.ieee.org/document/7880177/)
+    
+    - 그룹 내에서의 speech signal을 통해 오피니언 리더가 누군지 판별하는 알고리즘
+    - 얼마나 감정적인 대화를 하는지에 대한 Emotion ratio와 얼마나 대화에서 비중있게 말하는지에 대한 Conversation ratio를 통해 opnion leader의 score를 계산
+
+* [Detecting Opinion Leaders in Online Communities Based on An Improved PageRank Algorithm](https://www.researchgate.net/publication/272115243_Detecting_Opinion_Leaders_in_Online_Communities_Based_on_an_Improved_PageRank_Algorithm)
+
+    - 두 노드간에 이웃 노드의 일치 정도를 edge weight으로 하여 PageRank를 변형함
+
+* [Opinion Leader Mining Algorithm in Microblog Platform Based on Topic Similarity](https://ieeexplore.ieee.org/document/7924685/)
+    
+    - LDA를 통해 각 유저별로 토픽 벡터를 구함
+    - 두 유저 간 토픽 벡터를 Jensen-Shannon distance를 구한 뒤 그것을 edge weight으로 사용
+    - Node weight을 구하기 위한 수식을 만듦 (다만 이것을 위한 hyperparameter가 너무 많은게 단점!)
+
 
 ### Visualization
 
