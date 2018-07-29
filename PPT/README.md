@@ -41,3 +41,5 @@
 -   [Personalized Top-N Sequential Recommendation via Convolutional Sequence Embedding](https://drive.google.com/file/d/1_b9FI0XFaY_ivplT398D4QV5Olfgze0M/view?usp=sharing)
 
 -   [Topical Word Embeddings](https://drive.google.com/file/d/13xX4nDvBA_NU0z2hDo9zyIavNdySZIAj/view?usp=sharing)
+
+- [Outer Product Based Neural Collaborative Filtering](https://drive.google.com/file/d/1QXor_gW7biif84pQx3hZ-HjA79Q2dO34/view?usp=sharing)
