@@ -66,6 +66,11 @@
     - interaction map에 대해서 CNN layer를 통과하여 해당 유저가 해당 아이템을 볼 확률 생성
     - Bayesian Personalized Ranking loss 사용
 
+* [Exploiting Tri-Relationship for Fake News Detection](https://arxiv.org/abs/1712.07709)
+
+    - 언론사와 신문, 신문과 유저, 유저와 유저 간의 관계를 고려
+    - 각 관계를 NMF (Nonnegative matrix factorization) 방식을 이용하여 embedding 후 신문의 임베딩 벡터를 linear classifier로 semi-supervised 방식으로 학습함
+
 
 ### Social mining
 
