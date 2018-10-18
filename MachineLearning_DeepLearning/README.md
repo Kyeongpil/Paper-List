@@ -52,6 +52,11 @@
     - Translated ReLU, gradient 기반의 mean squared Euclidean distance evaluation 제안
     - 기존 DCGAN보다 좋은 성능, 다만 새로운 GAN들과의 비교 부족이 아쉬움
 
+* [Self-supervised learning of visual features through embedding images into text topic spaces](https://arxiv.org/abs/1705.08631)
+
+    - 위키피디아에 있는 문서-이미지 쌍을 데이터셋으로 하여, 문서 집합을 토픽모델링(LDA)를 통해 토픽 분포를 추출하고, 이미지를 CNN 모델을 통해 해당 문서의 토픽 분포를 예측하도록 함
+    - 각 이미지가 유사한 토픽끼리 클러스터링 됨
+    - 이미지 검색 등에 활용 가능성
 
 
 ### Word/Sentence Embedding
