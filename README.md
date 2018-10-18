@@ -1,7 +1,6 @@
 # Paper List
 
 지금(2016.7 ~ )까지 읽은 몇몇 논문 간략히 정리했습니다.
-(1 년간 읽은 논문들은 간략히 소개만 하는 정도로 정리했습니다)
 
 ### [Machine Learning & Deep Learning](https://github.com/rudvlf0413/Paper-List/tree/master/MachineLearning_DeepLearning#deep-learning-papers)
 
