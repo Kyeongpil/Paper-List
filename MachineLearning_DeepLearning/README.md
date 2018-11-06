@@ -379,3 +379,8 @@ earning으로 학습함
     - single directed acyclic graph 이용
     - parameter sharing을 통해 child network의 학습 속도를 대폭 높임
     - 여러가지 technique 추가
+
+* [Attention is All you need](https://arxiv.org/abs/1706.03762)
+    - Query, Key, Value를 통해 lstm의 순차적인 embedding 방식에서 벗어나 한번에 encoding해서 효율적으로 계산함
+    - Multi hop 방식과 Multi channel 방식을 사용
+    - 순서 정보를 위해 Positional encoding을 사용하되, 각 차원별로 다른 주기의 sinusoid 함수를 사용
