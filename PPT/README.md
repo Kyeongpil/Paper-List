@@ -45,3 +45,7 @@
 - [Outer Product Based Neural Collaborative Filtering](https://drive.google.com/file/d/1QXor_gW7biif84pQx3hZ-HjA79Q2dO34/view?usp=sharing)
 
 - [Self-supervised learning of visual features through embedding images into text topic spaces](http://tinyurl.com/yalamun7)
+
+- [Interactive Attention Networks for Aspect-Level Sentiment Classification](http://tinyurl.com/y9yq85bv)
+
+- [Recurrent Attention Network on Memory for Aspect Sentiment Analysis](http://tinyurl.com/ydgwwyfe)
