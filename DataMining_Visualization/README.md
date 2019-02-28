@@ -71,7 +71,7 @@
     - 언론사와 신문, 신문과 유저, 유저와 유저 간의 관계를 고려
     - 각 관계를 NMF (Nonnegative matrix factorization) 방식을 이용하여 embedding 후 신문의 임베딩 벡터를 linear classifier로 semi-supervised 방식으로 학습함
 
-* [Ranking Distillation: Learning Compact Ranking Models With High Performance for Recommender System](http://delivery.acm.org/10.1145/3230000/3220021/p2289-tang.pdf?ip=163.152.26.50&id=3220021&acc=ACTIVE%20SERVICE&key=0EC22F8658578FE1%2E92929792C8912683%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1540878280_418d6a731497f559bb52b0d423b89a5c)
+* [Ranking Distillation: Learning Compact Ranking Models With High Performance for Recommender System](http://www.sfu.ca/~jiaxit/resources/kdd18ranking.pdf)
 
     - 먼저 큰 규모의 모델(Teacher model)을 학습한 뒤, 데이터셋과 큰 모델이 예측한 확률분포를 통해 작은 모델(Student model)을 학습
     - 이를 통해 Student model은 Teacher model에서 나온 Ranking (Top-K) 및 데이터셋의 latent 분포를 배울 수 있도록 학습함 
