@@ -127,16 +127,6 @@
     - 각 word embedding w1, w2와 dependency path r에 대해 w1-w2과 r과의 거리를 가깝도록 함
     - 학습된 embedding feature를 가지고 CRF를 학습하고 Aspect term extraction 수행
 
-* [Interactive Attention Networks for Aspect-Level Sentiment Classification](https://www.ijcai.org/proceedings/2017/0568.pdf)
-    - 기존의 sentiment analysis에서 더 나아가 context sentence에서 target에 대한 감정을 분석하도록 함
-    - 예시) context - 이 영화는 재밌지만 배우 연기는 별로다, target - 배우 => 부정적으로 예측
-    - target과 context가 서로 interaction을 통해 attention을 구하도록 함
-
-* [Recurrent Attention Network on Memory for Aspect Sentiment Analysis](https://www.cs.cmu.edu/~lbing/pub/emnlp17_aspect_sentiment.pdf)
-    - Interactive Attention Networks for Aspect-Level Sentiment Classification 논문과 비슷하게 sentence에서 target word에 대한 감정 분석을 함, 단 target word는 문장안에 무조건 있다는 가정
-    - bidirectional lstm에서 나온 hidden state vector에다가 target word와의 거리를 가중치를 줌
-    - 여기에 attention weight을 GRU를 통해 step에 따라 변화하도록 계산함
-
 
 ### Natural Language Processing, Language Model, QA
 
@@ -287,6 +277,17 @@ earning으로 학습함
     - Pointer network + attention 기반의 sequence to sequence 모델
     - maximum likelihood training + 리워드를 통한 policy gradient 학습
     - 기존 학습된 모델들을 통해 얼마나 질문 같은지에 대한 reward와 얼마나 문장같은지에 대한 reward를 추정함
+    
+    
+* [Interactive Attention Networks for Aspect-Level Sentiment Classification](https://www.ijcai.org/proceedings/2017/0568.pdf)
+    - 기존의 sentiment analysis에서 더 나아가 context sentence에서 target에 대한 감정을 분석하도록 함
+    - 예시) context - 이 영화는 재밌지만 배우 연기는 별로다, target - 배우 => 부정적으로 예측
+    - target과 context가 서로 interaction을 통해 attention을 구하도록 함
+
+* [Recurrent Attention Network on Memory for Aspect Sentiment Analysis](https://www.cs.cmu.edu/~lbing/pub/emnlp17_aspect_sentiment.pdf)
+    - Interactive Attention Networks for Aspect-Level Sentiment Classification 논문과 비슷하게 sentence에서 target word에 대한 감정 분석을 함, 단 target word는 문장안에 무조건 있다는 가정
+    - bidirectional lstm에서 나온 hidden state vector에다가 target word와의 거리를 가중치를 줌
+    - 여기에 attention weight을 GRU를 통해 step에 따라 변화하도록 계산함
 
 
 
