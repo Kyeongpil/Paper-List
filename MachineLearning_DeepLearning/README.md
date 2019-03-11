@@ -289,6 +289,11 @@ earning으로 학습함
     - bidirectional lstm에서 나온 hidden state vector에다가 target word와의 거리를 가중치를 줌
     - 여기에 attention weight을 GRU를 통해 step에 따라 변화하도록 계산함
 
+* [Hierarchical Attention Networks for Document Classification](http://tinyurl.com/yayalcef)
+
+    - Document classification에 word-level, sentence-level의 attention 적용
+    - Attention에 쓰이는 content vector 또한 trainable vector
+
 
 
 ### Speech & Sound
