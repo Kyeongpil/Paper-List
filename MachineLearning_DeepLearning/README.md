@@ -58,6 +58,13 @@
     - 각 이미지가 유사한 토픽끼리 클러스터링 됨
     - 이미지 검색 등에 활용 가능성
 
+* [Reffering Relationships](https://arxiv.org/abs/1803.10362)
+
+    - 이미지와 이미지 안에 있는 관계 (e.g. Person, Kicking, Ball)를 통해 해당하는 Subject와 Object를 찾아내는 태스크
+    - 해당하는 문제는 Subject, Object 크기에 따라 난이도가 다르며, 두 객체와 두 객체의 관계(predicate)에 따라 봐야하는 부분이 달라진다.
+    - 이 문제를 위해 각 객체와 객체의 관계에 따라 attention이 변화할 수 있도록 모델링함 (Symmetric stacked attention shifting model) 
+
+
 
 ### Word/Sentence Embedding
 
