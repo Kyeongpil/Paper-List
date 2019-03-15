@@ -4,13 +4,11 @@
 ### Vision & Video & GAN
 
 * [Generative Adversarial Nets](https://arxiv.org/abs/1406.2661)
-
     - 첫 GAN 모델 제안
     - Minimax game
 
 
 * [UNSUPERVISED REPRESENTATION LEARNING WITH DEEP CONVOLUTIONAL GENERATIVE ADVERSARIAL NETWORKS](https://arxiv.org/abs/1511.06434)
-
     - 기존 GAN 모델을 더 안정적으로 학습할 수 있는 방법(technique) 제시   
 
 
@@ -51,18 +49,20 @@
     - Batch normalization에서 나타나는 mode collapse를 방지하기 위해 weight normalization 제안
     - Translated ReLU, gradient 기반의 mean squared Euclidean distance evaluation 제안
     - 기존 DCGAN보다 좋은 성능, 다만 새로운 GAN들과의 비교 부족이 아쉬움
-
 * [Self-supervised learning of visual features through embedding images into text topic spaces](https://arxiv.org/abs/1705.08631)
 
     - 위키피디아에 있는 문서-이미지 쌍을 데이터셋으로 하여, 문서 집합을 토픽모델링(LDA)를 통해 토픽 분포를 추출하고, 이미지를 CNN 모델을 통해 해당 문서의 토픽 분포를 예측하도록 함
     - 각 이미지가 유사한 토픽끼리 클러스터링 됨
     - 이미지 검색 등에 활용 가능성
-
 * [Reffering Relationships](https://arxiv.org/abs/1803.10362)
 
     - 이미지와 이미지 안에 있는 관계 (e.g. Person, Kicking, Ball)를 통해 해당하는 Subject와 Object를 찾아내는 태스크
     - 해당하는 문제는 Subject, Object 크기에 따라 난이도가 다르며, 두 객체와 두 객체의 관계(predicate)에 따라 봐야하는 부분이 달라진다.
     - 이 문제를 위해 각 객체와 객체의 관계에 따라 attention이 변화할 수 있도록 모델링함 (Symmetric stacked attention shifting model) 
+* [Text-Adaptive Generative Adversarial Networks: Manipulating Images with Natural Language](https://arxiv.org/abs/1810.11919)
+
+    * 이미지와 변환하려는 text를 인풋으로 넣어서 변환하려는 text에 맞게 이미지를 변환함
+    * Attention과 Word-level로 descriminator loss를 발생시켜, 특정 단어들에 대한 특징을 이미지에 잘 변환되도록 함
 
 
 
@@ -252,7 +252,6 @@
     - 먼저 전체 time step에 대해 convolution을 하고 time step에 따라 liear multiplication을 없애 속도를 빨리 함
     - 해당 모델에 따른 Attention과 sequence to sequence 방법도 제시
     - 기존 LSTM에 비해 속도도 빠르면서 성능도 개선, 더 긴 sequence에 대해서 학습 가능성
-    
 
 * [A simple neural network module for relational reasoning](https://deepmind.com/blog/neural-approach-relational-reasoning/)
 
@@ -272,7 +271,7 @@ earning으로 학습함
 
 
 * [Detect Rumor and Stance Jointly by Neural Multi-task Learning](https://dl.acm.org/citation.cfm?id=3188729)
-    
+  
     - Rumor detection과 stance detection을 동시에 하면서 학습함
     - GRU Layer 하나를 두 태스크가 공유함
     - 특이한건 각 문장에 대한 벡터 인풋으로 tf-idf vector를 인풋으로 함
@@ -284,8 +283,7 @@ earning으로 학습함
     - Pointer network + attention 기반의 sequence to sequence 모델
     - maximum likelihood training + 리워드를 통한 policy gradient 학습
     - 기존 학습된 모델들을 통해 얼마나 질문 같은지에 대한 reward와 얼마나 문장같은지에 대한 reward를 추정함
-    
-    
+
 * [Interactive Attention Networks for Aspect-Level Sentiment Classification](https://www.ijcai.org/proceedings/2017/0568.pdf)
     - 기존의 sentiment analysis에서 더 나아가 context sentence에서 target에 대한 감정을 분석하도록 함
     - 예시) context - 이 영화는 재밌지만 배우 연기는 별로다, target - 배우 => 부정적으로 예측
@@ -306,7 +304,7 @@ earning으로 학습함
 ### Speech & Sound
 
 * [Towards End-to-End Speech Recognition with Recurrent Neural Networks](http://mickey-luke.de/ASR2.pdf)
-    
+  
     - 음성을 텍스트로 인식하는 task
     - Bidirectional RNN 사용
     - 음성 길이와 텍스트 길이가 다르므로 학습을 위해 Connectionist Temporal Classification(CTC) 방법 제시
@@ -386,7 +384,7 @@ earning으로 학습함
 
 
 * [Forward Thinking: Building and Training Neural Networks One Layer at a Time](https://arxiv.org/abs/1706.02480)
-    
+  
     - 한 레이어를 충분히 학습하면 그 레이어는 더이상 학습을 하지 않도록 하고 그 위에 추가 레이어를 쌓는 방법
     - 학습을 할 때는 이전 layer에는 더이상 back propagation을 하지 않으므로 학습 속도가 빨라짐
     - MNIST에만 실험했다는 한계
