@@ -135,7 +135,7 @@
     - 학습된 embedding feature를 가지고 CRF를 학습하고 Aspect term extraction 수행
 
 
-### Natural Language Processing, Language Model, QA
+### Natural Language Processing (Language Model, QA, Sentiment Analysis, etc.)
 
 * [Sequence to Sequence Learning with Neural Netowrks](https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf)
 
@@ -283,21 +283,23 @@ earning으로 학습함
     - Pointer network + attention 기반의 sequence to sequence 모델
     - maximum likelihood training + 리워드를 통한 policy gradient 학습
     - 기존 학습된 모델들을 통해 얼마나 질문 같은지에 대한 reward와 얼마나 문장같은지에 대한 reward를 추정함
-
 * [Interactive Attention Networks for Aspect-Level Sentiment Classification](https://www.ijcai.org/proceedings/2017/0568.pdf)
     - 기존의 sentiment analysis에서 더 나아가 context sentence에서 target에 대한 감정을 분석하도록 함
     - 예시) context - 이 영화는 재밌지만 배우 연기는 별로다, target - 배우 => 부정적으로 예측
     - target과 context가 서로 interaction을 통해 attention을 구하도록 함
-
 * [Recurrent Attention Network on Memory for Aspect Sentiment Analysis](https://www.cs.cmu.edu/~lbing/pub/emnlp17_aspect_sentiment.pdf)
     - Interactive Attention Networks for Aspect-Level Sentiment Classification 논문과 비슷하게 sentence에서 target word에 대한 감정 분석을 함, 단 target word는 문장안에 무조건 있다는 가정
     - bidirectional lstm에서 나온 hidden state vector에다가 target word와의 거리를 가중치를 줌
     - 여기에 attention weight을 GRU를 통해 step에 따라 변화하도록 계산함
-
 * [Hierarchical Attention Networks for Document Classification](http://tinyurl.com/yayalcef)
 
     - Document classification에 word-level, sentence-level의 attention 적용
     - Attention에 쓰이는 content vector 또한 trainable vector
+* [Exploiting Coarse-toFine Task Transfer for Aspect-level Sentiment Classification](https://arxiv.org/abs/1811.10999)
+
+    * Sentiment analysis 관련 데이터셋에 대해 한 도메인은 데이터셋 크기가 메우 작은 경우, 데이터셋 크기가 큰 도메인을 활용해서 transfer learning을 적용하여 학습함
+    * 또한 Aspect sentiment analysis로 주어진 문장으로부터 주어진 카테고리에 대한 감정 스코어를 계산함
+    * 하지만 도메인이 다른 경우 단어의 감정 스코어나 중요도가 다르기 때문에 이를 맞춰주기 위한 Attention 모듈들과 Loss들을 소개함
 
 
 
