@@ -49,3 +49,13 @@
 - [Interactive Attention Networks for Aspect-Level Sentiment Classification](http://tinyurl.com/y9yq85bv)
 
 - [Recurrent Attention Network on Memory for Aspect Sentiment Analysis](http://tinyurl.com/ydgwwyfe)
+
+- [Sequential Recommender System based on Hierarchical Attention Network](http://tinyurl.com/yyt35zfz)
+
+- [Self-supervised learning of visual features through embedding images into text topic spaces](https://drive.google.com/open?id=1SbmTVc29rbVEi7QK5S38yuUBQtK6vfto)
+
+- [Referring Relationships, Text-Adaptive Generative Adversarial Networks Manipulating Images with Natual Languages](https://drive.google.com/open?id=1SIo73yf8mv_U9xUhoQ5B6w2K5eLJCW2Y)
+
+- [Multi-Pointer Co-Attention Networks for Recommendation](https://drive.google.com/open?id=1QzFAMPyqXJsmutauI7Xj7ZKNL7rhypwA)
+
+- [Adversarial Network Embedding](https://drive.google.com/open?id=1xYZW-sp4WvxKmwKSnprq-LpPDxaBdPrI)
