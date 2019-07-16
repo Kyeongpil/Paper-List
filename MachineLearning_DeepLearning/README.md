@@ -407,3 +407,8 @@ earning으로 학습함
     - Query, Key, Value를 통해 lstm의 순차적인 embedding 방식에서 벗어나 한번에 encoding해서 효율적으로 계산함
     - Multi hop 방식과 Multi channel 방식을 사용
     - 순서 정보를 위해 Positional encoding을 사용하되, 각 차원별로 다른 주기의 sinusoid 함수를 사용
+
+* [Adversarial Network Embedding](https://arxiv.org/abs/1711.07838)
+    - 네트워크에 있는 각 노드들을 임베딩함
+    - Deep walk 기반으로 generator를 통해 low dimensional vector 생성,
+    - Discriminator를 통해 prior distribution으로 임베딩 되도록 regularization 적용
