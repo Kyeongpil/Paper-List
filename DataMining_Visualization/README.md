@@ -77,6 +77,19 @@
     - 이를 통해 Student model은 Teacher model에서 나온 Ranking (Top-K) 및 데이터셋의 latent 분포를 배울 수 있도록 학습함 
     - Overfitting에 강하고 좀더 효율적으로 추론이 가능
 
+* [RippleNet: Propagating User Preferences on the Knowledge Graph for Recommender Systems](https://arxiv.org/abs/1803.03467)
+
+    - Click set (Implicit set)과 knowledge graph data를 결합한 추천시스템 모델
+    - graph 상에서 링크에 따라 propagate를 하여 neighbor들을 확장한 rippleset을 이용하여 user embedding vector를 계산함, 이 때 knowledge graph embedding 기법과 attention 기법을 활용하여 각 노드들을 임베딩함
+    - knowledge graph 정보까지 활용하여 영화 간의 정보 (국가, 감독 등)을 효과적으로 사용
+
+* [Adversarial Personalized Ranking for Recommendation](https://arxiv.org/abs/1808.03908)
+
+    - Collaborative filtering에 adversarial learning (adversarial noise)를 적용
+    - Bayesian personalized ranking (BPR) loss 적용
+    - adversarial noise를 활용한 regularization을 통해 l2 regularization 등의 기법을 적용하여 모델 파라미터 가중치 크기를 줄이지 않더라도 overfitting을 방지함 (generalization에 robust함)
+
+
 ### Social mining
 
 -   [The spread true and false news online](http://science.sciencemag.org/content/359/6380/1146)
